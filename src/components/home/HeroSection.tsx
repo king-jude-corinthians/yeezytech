@@ -155,7 +155,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, x: 30, scale: 0.95 }}
               animate={{ opacity: 1, x: 0, scale: 1 }}
               transition={{ type: 'spring', stiffness: 80, damping: 20, delay: 0.2 }}
-              className="relative order-1 md:order-2"
+              className="relative order-1 md:order-2 max-w-[280px] md:max-w-[320px] mx-auto md:mx-0 md:ml-auto"
             >
               <div className="relative rounded-[2rem] overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 aspect-[9/20]">
                 <video
