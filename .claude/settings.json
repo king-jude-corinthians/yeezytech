@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"c:/Users/mirac/Downloads/yeezy\" && git add -A && git commit -m \"Auto-save: update project files\" --allow-empty 2>/dev/null; git push origin main 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  }
+}
