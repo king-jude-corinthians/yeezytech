@@ -57,21 +57,27 @@ export default function HeroSection() {
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    // Also fire on touch move for mobile
+    window.addEventListener('touchmove', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('touchmove', handleScroll);
+    };
   }, []);
 
   return (
     // Tall wrapper — gives scroll room; inner content is sticky
-    <div ref={wrapperRef} className="relative h-[280vh]">
+    <div ref={wrapperRef} className="relative h-[220vh] md:h-[280vh]">
       <div className="sticky top-0 h-screen flex items-center bg-[#f9fafb] overflow-hidden">
-        <div className="max-w-[1400px] mx-auto px-4 md:px-8 w-full py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-[1400px] mx-auto px-4 md:px-8 w-full py-10 md:py-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
 
-            {/* Text */}
+            {/* Text — shown second on mobile, first on desktop */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ type: 'spring', stiffness: 80, damping: 20, delay: 0.1 }}
+              className="order-2 md:order-1"
             >
               <motion.span
                 initial={{ opacity: 0, y: 10 }}
@@ -85,7 +91,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, type: 'spring', stiffness: 80, damping: 20 }}
-                className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[0.95] text-zinc-900 mb-6"
+                className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[0.95] text-zinc-900 mb-4 md:mb-6"
               >
                 The Future
                 <br />
@@ -129,7 +135,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.7 }}
-                className="flex gap-8 mt-14 pt-8 border-t border-slate-200"
+                className="flex gap-6 md:gap-8 mt-8 md:mt-14 pt-6 md:pt-8 border-t border-slate-200"
               >
                 {[
                   { value: '500+', label: 'Products' },
@@ -144,12 +150,12 @@ export default function HeroSection() {
               </motion.div>
             </motion.div>
 
-            {/* Video panel */}
+            {/* Video panel — shown first on mobile */}
             <motion.div
               initial={{ opacity: 0, x: 30, scale: 0.95 }}
               animate={{ opacity: 1, x: 0, scale: 1 }}
               transition={{ type: 'spring', stiffness: 80, damping: 20, delay: 0.2 }}
-              className="relative"
+              className="relative order-1 md:order-2"
             >
               <div className="relative rounded-[2rem] overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 aspect-square">
                 <video
