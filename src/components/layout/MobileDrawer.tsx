@@ -28,12 +28,10 @@ export default function MobileDrawer({
             animate={{ x: 0 }}
             exit={{ x: '-100%' }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-            className="fixed top-0 left-0 bottom-0 w-[320px] bg-zinc-900 z-50 flex flex-col"
+            className="fixed top-0 left-0 bottom-0 w-[320px] bg-[#1B1B72] z-50 flex flex-col"
           >
             <div className="flex items-center justify-between p-6 border-b border-white/10">
-              <span className="text-white font-bold tracking-wider text-lg">
-                YEEZYTECH
-              </span>
+              <img src="/logo.png" alt="YeezyTech Gadgets" className="h-12 w-auto object-contain brightness-0 invert" />
               <button
                 onClick={onClose}
                 className="text-white/60 hover:text-white transition-colors"
@@ -49,18 +47,18 @@ export default function MobileDrawer({
                   <Link
                     href={`/category/${category.slug}`}
                     onClick={onClose}
-                    className="flex items-center justify-between py-3 text-white/90 hover:text-white transition-colors"
+                    className="flex items-center justify-between py-3 text-white hover:text-white/70 transition-colors"
                   >
-                    <span className="text-base">{category.name}</span>
-                    <CaretRight size={16} className="text-white/40" />
+                    <span className="text-base font-semibold">{category.name}</span>
+                    <CaretRight size={16} className="text-white/50" />
                   </Link>
-                  <div className="ml-2 border-l border-white/10 pl-4">
+                  <div className="ml-2 border-l border-white/20 pl-4">
                     {category.subcategories.map((sub) => (
                       <Link
                         key={sub.slug}
                         href={`/category/${category.slug}?sub=${sub.slug}`}
                         onClick={onClose}
-                        className="block py-2 text-sm text-white/50 hover:text-white/80 transition-colors"
+                        className="block py-2 text-sm text-white/60 hover:text-white transition-colors"
                       >
                         {sub.name}
                       </Link>
@@ -73,21 +71,21 @@ export default function MobileDrawer({
                 <Link
                   href="/shop"
                   onClick={onClose}
-                  className="block py-3 text-white/90 hover:text-white transition-colors"
+                  className="block py-3 text-white hover:text-white/70 transition-colors font-medium"
                 >
                   All Products
                 </Link>
                 <Link
                   href="/about"
                   onClick={onClose}
-                  className="block py-3 text-white/90 hover:text-white transition-colors"
+                  className="block py-3 text-white hover:text-white/70 transition-colors font-medium"
                 >
                   About
                 </Link>
                 <Link
                   href="/contact"
                   onClick={onClose}
-                  className="block py-3 text-white/90 hover:text-white transition-colors"
+                  className="block py-3 text-white hover:text-white/70 transition-colors font-medium"
                 >
                   Contact
                 </Link>
