@@ -9,7 +9,7 @@ export default function AnnouncementBar() {
   if (!visible) return null;
 
   return (
-    <div className="bg-emerald-500 text-white text-center text-sm py-2 px-4 relative">
+    <div className="bg-[#1B1B72] text-white text-center text-sm py-2 px-4 relative">
       <p className="font-medium">
         Free shipping on all orders over $50 &mdash; Limited time offer
       </p>

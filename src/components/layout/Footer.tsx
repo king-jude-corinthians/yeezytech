@@ -30,20 +30,26 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-900 text-white mt-auto">
+    <footer className="bg-[#12125a] text-white mt-auto">
       <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <Link
-              href="/"
-              className="font-bold text-lg tracking-[0.15em] text-white"
-            >
-              YEEZYTECH
+            <Link href="/" className="flex items-center gap-2">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="2" width="14" height="22" rx="2.5" stroke="white" strokeWidth="2" fill="none"/>
+                <circle cx="13" cy="21" r="1" fill="white"/>
+                <rect x="21" y="7" width="2.5" height="2.5" rx="0.5" fill="white"/>
+                <rect x="24.5" y="4.5" width="2" height="2" rx="0.5" fill="white" opacity="0.6"/>
+                <path d="M4 20 Q13 15 26 19" stroke="white" strokeWidth="2" strokeLinecap="round" fill="none"/>
+              </svg>
+              <div className="leading-tight">
+                <span className="block font-bold text-base tracking-tight text-white">YeezyTech</span>
+                <span className="block text-[10px] font-semibold tracking-wider text-white/60 -mt-0.5">GADGETS</span>
+              </div>
             </Link>
-            <p className="mt-4 text-sm text-zinc-400 leading-relaxed max-w-[280px]">
-              Premium electronics and accessories. Authentic products, fast
-              delivery, and expert support.
+            <p className="mt-4 text-sm text-white/50 leading-relaxed max-w-[280px]">
+              Powering Smart Living. Premium electronics and accessories — authentic products, fast delivery, and expert support.
             </p>
           </div>
 

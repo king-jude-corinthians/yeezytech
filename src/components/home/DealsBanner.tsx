@@ -19,15 +19,15 @@ export default function DealsBanner() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ type: 'spring', stiffness: 80, damping: 20 }}
-          className="bg-zinc-900 rounded-[2rem] p-8 md:p-12 overflow-hidden relative"
+          className="bg-[#1B1B72] rounded-[2rem] p-8 md:p-12 overflow-hidden relative"
         >
           {/* Decorative blur */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none" />
 
           {/* Top section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div>
-              <span className="text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-3 block">
+              <span className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-3 block">
                 Limited Time
               </span>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">
@@ -38,7 +38,7 @@ export default function DealsBanner() {
               </p>
               <Link
                 href="/shop?deals=true"
-                className="inline-flex items-center gap-2 bg-emerald-500 text-white rounded-xl px-7 py-4 font-medium hover:bg-emerald-600 active:scale-[0.98] transition-all"
+                className="inline-flex items-center gap-2 bg-white text-[#1B1B72] rounded-xl px-7 py-4 font-medium hover:bg-white/90 active:scale-[0.98] transition-all"
               >
                 Shop Deals
                 <ArrowRight size={16} />
@@ -64,14 +64,14 @@ export default function DealsBanner() {
                   <p className="text-xs text-zinc-500 mb-1">{product.brand}</p>
                   <p className="text-sm font-semibold text-white mb-2 line-clamp-1">{product.name}</p>
                   <div className="flex items-center gap-2">
-                    <span className="text-emerald-400 font-bold">{formatCurrency(product.price)}</span>
+                    <span className="text-white font-bold">{formatCurrency(product.price)}</span>
                     {product.originalPrice && (
                       <span className="text-zinc-500 text-sm line-through">
                         {formatCurrency(product.originalPrice)}
                       </span>
                     )}
                     {product.originalPrice && (
-                      <span className="ml-auto text-xs bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded-full">
+                      <span className="ml-auto text-xs bg-white/20 text-white px-2 py-0.5 rounded-full">
                         -{Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)}%
                       </span>
                     )}

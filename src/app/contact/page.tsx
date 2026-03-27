@@ -160,7 +160,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="bg-zinc-900 hover:bg-zinc-800 text-white rounded-xl px-8 py-3.5 text-sm font-medium active:scale-[0.98] transition-all flex items-center gap-2 disabled:opacity-70"
+                  className="bg-[#1B1B72] hover:bg-[#14145a] text-white rounded-xl px-8 py-3.5 text-sm font-medium active:scale-[0.98] transition-all flex items-center gap-2 disabled:opacity-70"
                 >
                   {loading ? (
                     <><span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" /> Sending...</>

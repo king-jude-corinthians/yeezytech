@@ -53,12 +53,12 @@ export default function ProductCard({ product }: { product: Product }) {
             />
             {/* Badges */}
             {product.isNew && (
-              <span className="absolute top-3 left-3 bg-zinc-900 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full tracking-wide">
+              <span className="absolute top-3 left-3 bg-[#1B1B72] text-white text-[10px] font-semibold px-2.5 py-1 rounded-full tracking-wide">
                 New
               </span>
             )}
             {product.isDeal && product.originalPrice && (
-              <span className="absolute top-3 left-3 bg-emerald-500 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full tracking-wide">
+              <span className="absolute top-3 left-3 bg-[#1B1B72] text-white text-[10px] font-semibold px-2.5 py-1 rounded-full tracking-wide">
                 Sale
               </span>
             )}
@@ -118,14 +118,14 @@ export default function ProductCard({ product }: { product: Product }) {
               animate={{ opacity: hovered ? 1 : 0, y: hovered ? 0 : 6 }}
               transition={{ duration: 0.2 }}
               onClick={handleAddToCart}
-              className="mt-3 w-full bg-zinc-900 text-white text-sm font-medium py-2.5 rounded-xl flex items-center justify-center gap-2 hover:bg-zinc-800 active:scale-[0.98] transition-all md:flex hidden"
+              className="mt-3 w-full bg-[#1B1B72] text-white text-sm font-medium py-2.5 rounded-xl flex items-center justify-center gap-2 hover:bg-[#14145a] active:scale-[0.98] transition-all md:flex hidden"
             >
               <ShoppingBag size={14} />
               Add to Cart
             </motion.button>
             <button
               onClick={handleAddToCart}
-              className="mt-3 w-full bg-zinc-900 text-white text-sm font-medium py-2.5 rounded-xl flex items-center justify-center gap-2 hover:bg-zinc-800 active:scale-[0.98] transition-all md:hidden"
+              className="mt-3 w-full bg-[#1B1B72] text-white text-sm font-medium py-2.5 rounded-xl flex items-center justify-center gap-2 hover:bg-[#14145a] active:scale-[0.98] transition-all md:hidden"
             >
               <ShoppingBag size={14} />
               Add to Cart

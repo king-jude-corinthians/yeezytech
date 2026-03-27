@@ -19,7 +19,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-emerald-600 mb-6"
+              className="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-[#1B1B72] mb-6"
             >
               New Arrivals 2026
             </motion.span>
@@ -52,14 +52,14 @@ export default function HeroSection() {
             >
               <Link
                 href="/shop"
-                className="bg-zinc-900 text-white rounded-xl px-8 py-4 font-medium hover:bg-zinc-800 active:scale-[0.98] transition-all flex items-center gap-2"
+                className="bg-[#1B1B72] text-white rounded-xl px-8 py-4 font-medium hover:bg-[#14145a] active:scale-[0.98] transition-all flex items-center gap-2"
               >
                 Shop Now
                 <ArrowRight size={16} />
               </Link>
               <Link
                 href="/shop?deals=true"
-                className="text-emerald-600 font-medium hover:text-emerald-700 transition-colors flex items-center gap-1.5"
+                className="text-[#1B1B72] font-medium hover:text-[#14145a] transition-colors flex items-center gap-1.5"
               >
                 View Deals
                 <ArrowRight size={14} />
@@ -107,7 +107,7 @@ export default function HeroSection() {
               </div>
             </div>
             {/* Decorative blobs */}
-            <div className="absolute -top-8 -right-8 w-48 h-48 bg-emerald-100 rounded-full blur-3xl opacity-60 -z-10" />
+            <div className="absolute -top-8 -right-8 w-48 h-48 bg-[#e8e8f5] rounded-full blur-3xl opacity-60 -z-10" />
             <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-slate-200 rounded-full blur-3xl opacity-60 -z-10" />
           </motion.div>
         </div>

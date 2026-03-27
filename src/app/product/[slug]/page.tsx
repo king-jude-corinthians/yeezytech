@@ -140,7 +140,7 @@ export default function ProductPage({ params }: { params: Promise<{ slug: string
                     onClick={() => setSelectedVariant(v.value)}
                     className={`px-4 py-2 rounded-xl border text-sm font-medium transition-all ${
                       selectedVariant === v.value
-                        ? 'bg-zinc-900 text-white border-zinc-900'
+                        ? 'bg-[#1B1B72] text-white border-[#1B1B72]'
                         : 'bg-white text-zinc-600 border-slate-200 hover:border-zinc-400'
                     }`}
                   >
@@ -173,7 +173,7 @@ export default function ProductPage({ params }: { params: Promise<{ slug: string
           {/* Actions */}
           <button
             onClick={handleAddToCart}
-            className="w-full bg-zinc-900 text-white rounded-xl py-4 font-medium flex items-center justify-center gap-2 hover:bg-zinc-800 active:scale-[0.98] transition-all mb-3"
+            className="w-full bg-[#1B1B72] text-white rounded-xl py-4 font-medium flex items-center justify-center gap-2 hover:bg-[#14145a] active:scale-[0.98] transition-all mb-3"
           >
             {addedToCart ? (
               <><CheckCircle size={18} weight="fill" className="text-emerald-400" /> Added to Cart</>
