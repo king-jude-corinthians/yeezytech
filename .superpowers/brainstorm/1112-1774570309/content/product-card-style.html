@@ -1,0 +1,120 @@
+<h2>Product Card Style — YeezyTech Gadgets</h2>
+<p class="subtitle">How should individual products appear across the site?</p>
+
+<div class="cards">
+  <!-- Card A: Clean Minimal -->
+  <div class="card" data-choice="clean-minimal" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background: #f9fafb; border-radius: 12px; padding: 24px; min-height: 280px; display: flex; align-items: center; justify-content: center;">
+        <div style="width: 200px; background: #fff; border-radius: 16px; border: 1px solid #e5e7eb; overflow: hidden;">
+          <!-- Product image area -->
+          <div style="height: 140px; background: linear-gradient(135deg, #f3f4f6, #e5e7eb); display: flex; align-items: center; justify-content: center; position: relative;">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="1"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="12" y1="18" x2="12" y2="18.01" stroke-width="2"/></svg>
+            <!-- Wishlist icon -->
+            <div style="position: absolute; top: 8px; right: 8px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+          </div>
+          <!-- Info -->
+          <div style="padding: 14px;">
+            <div style="font-size: 10px; color: #6b7280; margin-bottom: 2px;">Apple</div>
+            <div style="font-size: 12px; font-weight: 600; color: #111827; margin-bottom: 8px;">iPhone 15 Pro Max</div>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div style="font-size: 13px; font-weight: 700; color: #111827;">$1,199</div>
+              <div style="width: 28px; height: 28px; background: #111827; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Clean Minimal</h3>
+      <p>White card, subtle border, product image on gray background. Brand label, product name, price, and a small add-to-cart button. Elegant and understated.</p>
+    </div>
+  </div>
+
+  <!-- Card B: Hover Reveal -->
+  <div class="card" data-choice="hover-reveal" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background: #f9fafb; border-radius: 12px; padding: 24px; min-height: 280px; display: flex; align-items: center; justify-content: center; gap: 16px;">
+        <!-- Default state -->
+        <div style="width: 150px; text-align: center;">
+          <div style="font-size: 8px; color: #9ca3af; margin-bottom: 4px;">DEFAULT</div>
+          <div style="background: #fff; border-radius: 16px; border: 1px solid #e5e7eb; overflow: hidden;">
+            <div style="height: 120px; background: linear-gradient(135deg, #f3f4f6, #e5e7eb); display: flex; align-items: center; justify-content: center;">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div style="padding: 10px;">
+              <div style="font-size: 11px; font-weight: 600; color: #111827; margin-bottom: 3px;">iPad Air M2</div>
+              <div style="font-size: 11px; color: #374151;">$599</div>
+            </div>
+          </div>
+        </div>
+        <!-- Hover state -->
+        <div style="width: 150px; text-align: center;">
+          <div style="font-size: 8px; color: #9ca3af; margin-bottom: 4px;">ON HOVER</div>
+          <div style="background: #fff; border-radius: 16px; border: 1px solid #d1d5db; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.08); transform: translateY(-2px);">
+            <div style="height: 120px; background: linear-gradient(135deg, #f3f4f6, #e5e7eb); display: flex; align-items: center; justify-content: center; position: relative;">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <!-- Quick actions revealed -->
+              <div style="position: absolute; bottom: 6px; left: 50%; transform: translateX(-50%); display: flex; gap: 4px;">
+                <div style="background: #111827; color: #fff; font-size: 7px; padding: 3px 8px; border-radius: 6px;">Quick View</div>
+                <div style="background: rgba(255,255,255,0.9); font-size: 7px; padding: 3px 6px; border-radius: 6px; border: 1px solid #e5e7eb;">
+                  <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 10px;">
+              <div style="font-size: 11px; font-weight: 600; color: #111827; margin-bottom: 3px;">iPad Air M2</div>
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="font-size: 11px; color: #374151;">$599</div>
+                <div style="background: #111827; color: #fff; font-size: 7px; padding: 3px 8px; border-radius: 6px;">Add to Cart</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Hover Reveal</h3>
+      <p>Minimal by default — just image, name, price. On hover: card lifts up, shadow deepens, and quick-action buttons (Quick View, Wishlist, Add to Cart) slide in. Interactive and engaging.</p>
+    </div>
+  </div>
+
+  <!-- Card C: Borderless Float -->
+  <div class="card" data-choice="borderless-float" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background: #f9fafb; border-radius: 12px; padding: 24px; min-height: 280px; display: flex; align-items: center; justify-content: center;">
+        <div style="width: 200px;">
+          <!-- No border, just image floating -->
+          <div style="height: 150px; background: linear-gradient(135deg, #f3f4f6, #e8e8e8); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; position: relative;">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <!-- Tag -->
+            <div style="position: absolute; top: 10px; left: 10px; background: #111827; color: #fff; font-size: 8px; padding: 2px 8px; border-radius: 9999px; font-weight: 500;">New</div>
+          </div>
+          <!-- Text below, no container -->
+          <div style="padding: 0 4px;">
+            <div style="display: flex; gap: 4px; margin-bottom: 4px;">
+              <div style="width: 6px; height: 6px; background: #111827; border-radius: 50%;"></div>
+              <div style="width: 6px; height: 6px; background: #9ca3af; border-radius: 50%; border: 1px solid #d1d5db;"></div>
+              <div style="width: 6px; height: 6px; background: #c9a96e; border-radius: 50%;"></div>
+            </div>
+            <div style="font-size: 12px; font-weight: 600; color: #111827; margin-bottom: 2px;">Apple Watch Ultra 2</div>
+            <div style="font-size: 10px; color: #6b7280; margin-bottom: 6px;">49mm Titanium Case</div>
+            <div style="font-size: 13px; font-weight: 700; color: #111827;">$799</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Borderless Float</h3>
+      <p>No card border — product image on a soft rounded background, info sits openly below. Color variant dots, product name, subtitle, and price. Gallery-like, airy, and premium.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
+  <p style="color: #666; font-size: 14px;">Click the product card style you want for YeezyTech.</p>
+</div>
