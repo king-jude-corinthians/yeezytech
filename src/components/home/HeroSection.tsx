@@ -157,7 +157,7 @@ export default function HeroSection() {
               transition={{ type: 'spring', stiffness: 80, damping: 20, delay: 0.2 }}
               className="relative order-1 md:order-2"
             >
-              <div className="relative rounded-[2rem] overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 aspect-[4/3]">
+              <div className="relative rounded-[2rem] overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 aspect-[9/16]">
                 <video
                   ref={videoRef}
                   src="/hero-video.mp4"
