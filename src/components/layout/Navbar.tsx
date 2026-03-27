@@ -46,21 +46,8 @@ export default function Navbar() {
             </button>
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 shrink-0">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                {/* Smartphone outline */}
-                <rect x="6" y="2" width="14" height="22" rx="2.5" stroke="#1B1B72" strokeWidth="2" fill="none"/>
-                <circle cx="13" cy="21" r="1" fill="#1B1B72"/>
-                {/* Pixel dots */}
-                <rect x="21" y="7" width="2.5" height="2.5" rx="0.5" fill="#1B1B72"/>
-                <rect x="24.5" y="4.5" width="2" height="2" rx="0.5" fill="#1B1B72" opacity="0.6"/>
-                {/* Swoosh */}
-                <path d="M4 20 Q13 15 26 19" stroke="#1B1B72" strokeWidth="2" strokeLinecap="round" fill="none"/>
-              </svg>
-              <div className="leading-tight">
-                <span className="block font-bold text-base tracking-tight text-[#1B1B72]">YeezyTech</span>
-                <span className="block text-[10px] font-semibold tracking-wider text-[#1B1B72] opacity-70 -mt-0.5">GADGETS</span>
-              </div>
+            <Link href="/" className="shrink-0">
+              <img src="/logo.png" alt="YeezyTech Gadgets" className="h-10 w-auto object-contain" />
             </Link>
 
             {/* Desktop nav links */}
