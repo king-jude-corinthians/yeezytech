@@ -1,12 +1,31 @@
 'use client';
 
+import { useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
 
 export default function HeroSection() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    const video = videoRef.current;
+    const section = sectionRef.current;
+    if (!video || !section || !video.duration) return;
+
+    const rect = section.getBoundingClientRect();
+    const relativeY = e.clientY - rect.top;
+    const progress = Math.min(Math.max(relativeY / rect.height, 0), 1);
+    video.currentTime = progress * video.duration;
+  }, []);
+
   return (
-    <section className="min-h-[100dvh] flex items-center bg-[#f9fafb]">
+    <section
+      ref={sectionRef}
+      onMouseMove={handleMouseMove}
+      className="min-h-[100dvh] flex items-center bg-[#f9fafb]"
+    >
       <div className="max-w-[1400px] mx-auto px-4 md:px-8 w-full py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Text */}
@@ -86,7 +105,7 @@ export default function HeroSection() {
             </motion.div>
           </motion.div>
 
-          {/* Image */}
+          {/* Video panel */}
           <motion.div
             initial={{ opacity: 0, x: 30, scale: 0.95 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
@@ -94,18 +113,34 @@ export default function HeroSection() {
             className="relative"
           >
             <div className="relative rounded-[2rem] overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 aspect-square">
-              <img
-                src="https://picsum.photos/seed/hero-gadget/800/800"
-                alt="Premium gadgets"
+              <video
+                ref={videoRef}
+                src="/hero-video.mp4"
+                preload="auto"
+                muted
+                playsInline
                 className="w-full h-full object-cover"
               />
+
+              {/* Interaction hint */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.2 }}
+                className="absolute top-4 right-4 bg-black/40 backdrop-blur-sm text-white text-[11px] font-medium px-3 py-1.5 rounded-full flex items-center gap-1.5"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                Move mouse to explore
+              </motion.div>
+
               {/* Floating badge */}
               <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm rounded-2xl px-5 py-4 shadow-xl">
                 <p className="text-xs text-zinc-400 mb-0.5">Latest Drop</p>
                 <p className="text-sm font-semibold text-zinc-900">iPhone 16 Pro Max</p>
-                <p className="text-emerald-600 font-bold text-sm">From $1,199</p>
+                <p className="text-[#000435] font-bold text-sm">From $1,199</p>
               </div>
             </div>
+
             {/* Decorative blobs */}
             <div className="absolute -top-8 -right-8 w-48 h-48 bg-[#e8e8f5] rounded-full blur-3xl opacity-60 -z-10" />
             <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-slate-200 rounded-full blur-3xl opacity-60 -z-10" />
