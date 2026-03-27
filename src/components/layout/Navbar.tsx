@@ -35,7 +35,7 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-[1400px] mx-auto px-4 md:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20">
             {/* Mobile hamburger */}
             <button
               onClick={() => setMobileOpen(true)}
@@ -47,7 +47,7 @@ export default function Navbar() {
 
             {/* Logo */}
             <Link href="/" className="shrink-0">
-              <img src="/logo.png" alt="YeezyTech Gadgets" className="h-10 w-auto object-contain" />
+              <img src="/logo.png" alt="YeezyTech Gadgets" className="h-16 w-auto object-contain" />
             </Link>
 
             {/* Desktop nav links */}
