@@ -53,25 +53,25 @@ export default function DealsBanner() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {deals.map((product) => (
               <Link key={product.id} href={`/product/${product.slug}`} className="group">
-                <div className="bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-5 transition-colors">
-                  <div className="aspect-[4/3] rounded-xl overflow-hidden bg-zinc-800 mb-4">
+                <div className="bg-white hover:bg-white/95 border border-white/20 rounded-2xl p-5 transition-colors">
+                  <div className="aspect-[4/3] rounded-xl overflow-hidden bg-slate-100 mb-4">
                     <img
                       src={product.images[0]}
                       alt={product.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <p className="text-xs text-zinc-500 mb-1">{product.brand}</p>
-                  <p className="text-sm font-semibold text-white mb-2 line-clamp-1">{product.name}</p>
+                  <p className="text-xs text-zinc-400 mb-1">{product.brand}</p>
+                  <p className="text-sm font-semibold text-zinc-900 mb-2 line-clamp-1">{product.name}</p>
                   <div className="flex items-center gap-2">
-                    <span className="text-white font-bold">{formatCurrency(product.price)}</span>
+                    <span className="text-[#1B1B72] font-bold">{formatCurrency(product.price)}</span>
                     {product.originalPrice && (
-                      <span className="text-zinc-500 text-sm line-through">
+                      <span className="text-zinc-400 text-sm line-through">
                         {formatCurrency(product.originalPrice)}
                       </span>
                     )}
                     {product.originalPrice && (
-                      <span className="ml-auto text-xs bg-white/20 text-white px-2 py-0.5 rounded-full">
+                      <span className="ml-auto text-xs bg-[#1B1B72]/10 text-[#1B1B72] px-2 py-0.5 rounded-full font-medium">
                         -{Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)}%
                       </span>
                     )}
