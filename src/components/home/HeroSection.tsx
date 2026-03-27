@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useCallback } from 'react';
+import { useRef, useCallback, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
@@ -8,16 +8,47 @@ import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
 export default function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
+  const targetTimeRef = useRef(0);
+  const rafRef = useRef<number | null>(null);
+  const isSeeking = useRef(false);
+
+  // Smooth RAF loop — only seeks when video is ready
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const tick = () => {
+      if (!isSeeking.current && video.duration) {
+        const diff = targetTimeRef.current - video.currentTime;
+        if (Math.abs(diff) > 0.01) {
+          video.currentTime += diff * 0.12; // ease toward target
+        }
+      }
+      rafRef.current = requestAnimationFrame(tick);
+    };
+
+    const onSeeking = () => { isSeeking.current = true; };
+    const onSeeked = () => { isSeeking.current = false; };
+
+    video.addEventListener('seeking', onSeeking);
+    video.addEventListener('seeked', onSeeked);
+    rafRef.current = requestAnimationFrame(tick);
+
+    return () => {
+      video.removeEventListener('seeking', onSeeking);
+      video.removeEventListener('seeked', onSeeked);
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    };
+  }, []);
 
   const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
-    const video = videoRef.current;
     const section = sectionRef.current;
-    if (!video || !section || !video.duration) return;
+    const video = videoRef.current;
+    if (!section || !video || !video.duration) return;
 
     const rect = section.getBoundingClientRect();
-    const relativeY = e.clientY - rect.top;
-    const progress = Math.min(Math.max(relativeY / rect.height, 0), 1);
-    video.currentTime = progress * video.duration;
+    const progress = Math.min(Math.max((e.clientY - rect.top) / rect.height, 0), 1);
+    targetTimeRef.current = progress * video.duration;
   }, []);
 
   return (
