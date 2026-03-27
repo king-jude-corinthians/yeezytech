@@ -22,7 +22,7 @@ export default function FeaturedSpotlight() {
         >
           {/* Info */}
           <div className="p-10 md:p-14 flex flex-col justify-center">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#1B1B72] mb-4">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#000435] mb-4">
               Featured Product
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-zinc-900 mb-3">
@@ -56,7 +56,7 @@ export default function FeaturedSpotlight() {
             </div>
             <Link
               href={`/product/${product.slug}`}
-              className="inline-flex items-center gap-2 bg-[#1B1B72] text-white rounded-xl px-7 py-4 font-medium hover:bg-[#14145a] active:scale-[0.98] transition-all w-fit"
+              className="inline-flex items-center gap-2 bg-[#000435] text-white rounded-xl px-7 py-4 font-medium hover:bg-[#000328] active:scale-[0.98] transition-all w-fit"
             >
               View Details
               <ArrowRight size={16} />

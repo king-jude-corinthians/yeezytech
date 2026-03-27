@@ -141,7 +141,7 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ type: 'spring', stiffness: 80, damping: 20 }}
-            className="bg-[#1B1B72] rounded-[2rem] p-12"
+            className="bg-[#000435] rounded-[2rem] p-12"
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, i) => (

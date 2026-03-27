@@ -77,7 +77,7 @@ export default function CategoryPage({ params }: { params: Promise<{ slug: strin
       {/* Hero banner */}
       <div className="relative overflow-hidden h-48 md:h-64">
         <img src={meta.image} alt={meta.title} className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-[#1B1B72]/70 flex flex-col justify-center px-8 md:px-16">
+        <div className="absolute inset-0 bg-[#000435]/70 flex flex-col justify-center px-8 md:px-16">
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-2">{meta.title}</h1>
           <p className="text-white/70 max-w-lg">{meta.description}</p>
         </div>
@@ -92,7 +92,7 @@ export default function CategoryPage({ params }: { params: Promise<{ slug: strin
               onClick={() => setActiveSub(sub)}
               className={`flex-none px-4 py-2 rounded-full text-sm font-medium transition-all ${
                 activeSub === sub
-                  ? 'bg-[#1B1B72] text-white'
+                  ? 'bg-[#000435] text-white'
                   : 'bg-white border border-slate-200 text-zinc-600 hover:border-zinc-400'
               }`}
             >

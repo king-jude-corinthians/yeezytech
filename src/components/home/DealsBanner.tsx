@@ -19,7 +19,7 @@ export default function DealsBanner() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ type: 'spring', stiffness: 80, damping: 20 }}
-          className="bg-[#1B1B72] rounded-[2rem] p-8 md:p-12 overflow-hidden relative"
+          className="bg-[#000435] rounded-[2rem] p-8 md:p-12 overflow-hidden relative"
         >
           {/* Decorative blur */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none" />
@@ -38,7 +38,7 @@ export default function DealsBanner() {
               </p>
               <Link
                 href="/shop?deals=true"
-                className="inline-flex items-center gap-2 bg-white text-[#1B1B72] rounded-xl px-7 py-4 font-medium hover:bg-white/90 active:scale-[0.98] transition-all"
+                className="inline-flex items-center gap-2 bg-white text-[#000435] rounded-xl px-7 py-4 font-medium hover:bg-white/90 active:scale-[0.98] transition-all"
               >
                 Shop Deals
                 <ArrowRight size={16} />
@@ -64,14 +64,14 @@ export default function DealsBanner() {
                   <p className="text-xs text-zinc-400 mb-1">{product.brand}</p>
                   <p className="text-sm font-semibold text-zinc-900 mb-2 line-clamp-1">{product.name}</p>
                   <div className="flex items-center gap-2">
-                    <span className="text-[#1B1B72] font-bold">{formatCurrency(product.price)}</span>
+                    <span className="text-[#000435] font-bold">{formatCurrency(product.price)}</span>
                     {product.originalPrice && (
                       <span className="text-zinc-400 text-sm line-through">
                         {formatCurrency(product.originalPrice)}
                       </span>
                     )}
                     {product.originalPrice && (
-                      <span className="ml-auto text-xs bg-[#1B1B72]/10 text-[#1B1B72] px-2 py-0.5 rounded-full font-medium">
+                      <span className="ml-auto text-xs bg-[#000435]/10 text-[#000435] px-2 py-0.5 rounded-full font-medium">
                         -{Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)}%
                       </span>
                     )}

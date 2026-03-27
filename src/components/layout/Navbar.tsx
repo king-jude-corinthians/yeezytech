@@ -96,7 +96,7 @@ export default function Navbar() {
                       animate={{ scale: 1 }}
                       exit={{ scale: 0 }}
                       transition={{ type: 'spring', stiffness: 500, damping: 25 }}
-                      className="absolute -top-1.5 -right-1.5 bg-[#1B1B72] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center"
+                      className="absolute -top-1.5 -right-1.5 bg-[#000435] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center"
                     >
                       {wishlistCount}
                     </motion.span>
@@ -116,7 +116,7 @@ export default function Navbar() {
                       animate={{ scale: 1 }}
                       exit={{ scale: 0 }}
                       transition={{ type: 'spring', stiffness: 500, damping: 25 }}
-                      className="absolute -top-1.5 -right-1.5 bg-[#1B1B72] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center"
+                      className="absolute -top-1.5 -right-1.5 bg-[#000435] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center"
                     >
                       {cartCount}
                     </motion.span>

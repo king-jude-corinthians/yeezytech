@@ -19,7 +19,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-[#1B1B72] mb-6"
+              className="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-[#000435] mb-6"
             >
               New Arrivals 2026
             </motion.span>
@@ -52,14 +52,14 @@ export default function HeroSection() {
             >
               <Link
                 href="/shop"
-                className="bg-[#1B1B72] text-white rounded-xl px-8 py-4 font-medium hover:bg-[#14145a] active:scale-[0.98] transition-all flex items-center gap-2"
+                className="bg-[#000435] text-white rounded-xl px-8 py-4 font-medium hover:bg-[#000328] active:scale-[0.98] transition-all flex items-center gap-2"
               >
                 Shop Now
                 <ArrowRight size={16} />
               </Link>
               <Link
                 href="/shop?deals=true"
-                className="text-[#1B1B72] font-medium hover:text-[#14145a] transition-colors flex items-center gap-1.5"
+                className="text-[#000435] font-medium hover:text-[#000328] transition-colors flex items-center gap-1.5"
               >
                 View Deals
                 <ArrowRight size={14} />

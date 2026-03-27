@@ -28,7 +28,7 @@ export default function MobileDrawer({
             animate={{ x: 0 }}
             exit={{ x: '-100%' }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-            className="fixed top-0 left-0 bottom-0 w-[320px] bg-[#1B1B72] z-50 flex flex-col"
+            className="fixed top-0 left-0 bottom-0 w-[320px] bg-[#000435] z-50 flex flex-col"
           >
             <div className="flex items-center justify-between p-6 border-b border-white/10">
               <img src="/logo.png" alt="YeezyTech Gadgets" className="h-12 w-auto object-contain brightness-0 invert" />
