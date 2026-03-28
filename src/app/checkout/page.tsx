@@ -237,7 +237,7 @@ export default function CheckoutPage() {
             options={{
               mode: 'payment',
               amount: Math.round(total * 100),
-              currency: 'usd',
+              currency: 'ngn',
               appearance,
             }}
           >
