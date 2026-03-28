@@ -159,9 +159,10 @@ export default function CartPage() {
             </div>
 
             <Link
-              href="/shop"
-              className="block w-full bg-[#000435] text-white rounded-xl py-4 font-medium hover:bg-[#000328] active:scale-[0.98] transition-all mb-3"
+              href="/checkout"
+              className="block w-full bg-[#000435] text-white rounded-xl py-4 font-medium hover:bg-[#000328] active:scale-[0.98] transition-all mb-3 text-center flex items-center justify-center gap-2"
             >
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 256 256" fill="currentColor"><path d="M208,80H176V56a48,48,0,0,0-96,0V80H48A16,16,0,0,0,32,96V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V96A16,16,0,0,0,208,80ZM96,56a32,32,0,0,1,64,0V80H96ZM208,208H48V96H208V208Zm-80-56a24,24,0,1,1,24-24A24,24,0,0,1,128,152Z"/></svg>
               Proceed to Checkout
             </Link>
             <Link href="/shop" className="block text-center text-sm text-zinc-400 hover:text-zinc-700 transition-colors">
