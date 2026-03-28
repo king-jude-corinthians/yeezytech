@@ -16,7 +16,7 @@ const defaultFilters: Filters = {
   categories: [],
   brands: [],
   minPrice: 0,
-  maxPrice: 5000,
+  maxPrice: 2500000,
   minRating: 0,
   inStock: false,
 };
