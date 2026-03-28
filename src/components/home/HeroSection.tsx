@@ -7,7 +7,7 @@ import { ArrowRight, ShieldCheck, Truck, ArrowsClockwise, Headset } from '@phosp
 export default function HeroSection() {
 
   const perks = [
-    { icon: <Truck size={16} />,           label: 'Free Delivery',  sub: 'Orders over $50' },
+    { icon: <Truck size={16} />,           label: 'Free Delivery',  sub: 'Orders over ₦50,000' },
     { icon: <ShieldCheck size={16} />,     label: '100% Authentic', sub: 'Genuine products' },
     { icon: <ArrowsClockwise size={16} />, label: 'Easy Returns',   sub: '7-day policy' },
     { icon: <Headset size={16} />,         label: '24/7 Support',   sub: 'Always available' },
