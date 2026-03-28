@@ -50,7 +50,7 @@ export const products: Product[] = [
     brand: 'Apple',
     category: 'phones',
     subcategory: 'iphones',
-    price: 1199,
+    price: 1650000,
     images: [
       'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800&h=600&fit=crop&auto=format',
@@ -94,8 +94,8 @@ export const products: Product[] = [
     brand: 'Samsung',
     category: 'phones',
     subcategory: 'samsung-galaxy',
-    price: 1299,
-    originalPrice: 1419,
+    price: 1950000,
+    originalPrice: 2200000,
     images: [
       'https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1581993192873-ab7e60c5b4cf?w=800&h=600&fit=crop&auto=format',
@@ -139,7 +139,7 @@ export const products: Product[] = [
     brand: 'Sony',
     category: 'gaming',
     subcategory: 'consoles',
-    price: 699,
+    price: 750000,
     images: [
       'https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=800&h=600&fit=crop&auto=format',
@@ -176,8 +176,8 @@ export const products: Product[] = [
     brand: 'Apple',
     category: 'audio',
     subcategory: 'earbuds',
-    price: 249,
-    originalPrice: 279,
+    price: 280000,
+    originalPrice: 320000,
     images: [
       'https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=800&h=600&fit=crop&auto=format',
@@ -211,7 +211,7 @@ export const products: Product[] = [
     brand: 'Apple',
     category: 'wearables',
     subcategory: 'apple-watch',
-    price: 799,
+    price: 900000,
     images: [
       'https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=600&fit=crop&auto=format',
@@ -251,8 +251,8 @@ export const products: Product[] = [
     brand: 'Sony',
     category: 'audio',
     subcategory: 'headphones',
-    price: 348,
-    originalPrice: 399,
+    price: 350000,
+    originalPrice: 420000,
     images: [
       'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&h=600&fit=crop&auto=format',
@@ -290,7 +290,7 @@ export const products: Product[] = [
     brand: 'Apple',
     category: 'phones',
     subcategory: 'iphones',
-    price: 599,
+    price: 620000,
     images: [
       'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1561154464-82e9adf32764?w=800&h=600&fit=crop&auto=format',
@@ -331,7 +331,7 @@ export const products: Product[] = [
     brand: 'Sony',
     category: 'gaming',
     subcategory: 'controllers',
-    price: 199,
+    price: 200000,
     images: [
       'https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800&h=600&fit=crop&auto=format',
@@ -364,7 +364,7 @@ export const products: Product[] = [
     brand: 'Apple',
     category: 'accessories',
     subcategory: 'chargers',
-    price: 129,
+    price: 130000,
     images: [
       'https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1572177812156-02f75c6f0d0e?w=800&h=600&fit=crop&auto=format',
@@ -395,8 +395,8 @@ export const products: Product[] = [
     brand: 'Samsung',
     category: 'audio',
     subcategory: 'earbuds',
-    price: 249,
-    originalPrice: 279,
+    price: 250000,
+    originalPrice: 300000,
     images: [
       'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&h=600&fit=crop&auto=format',
@@ -433,7 +433,7 @@ export const products: Product[] = [
     brand: 'Apple',
     category: 'wearables',
     subcategory: 'apple-watch',
-    price: 249,
+    price: 250000,
     images: [
       'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=800&h=600&fit=crop&auto=format',
@@ -473,8 +473,8 @@ export const products: Product[] = [
     brand: 'Anker',
     category: 'accessories',
     subcategory: 'hubs-adapters',
-    price: 65,
-    originalPrice: 79,
+    price: 65000,
+    originalPrice: 80000,
     images: [
       'https://images.unsplash.com/photo-1625842268584-8f3296236761?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1607706189992-eae578626c86?w=800&h=600&fit=crop&auto=format',
@@ -510,7 +510,7 @@ export const products: Product[] = [
     brand: 'JBL',
     category: 'audio',
     subcategory: 'speakers',
-    price: 179,
+    price: 180000,
     images: [
       'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&h=600&fit=crop&auto=format',
@@ -548,8 +548,8 @@ export const products: Product[] = [
     brand: 'Apple',
     category: 'phones',
     subcategory: 'iphones',
-    price: 799,
-    originalPrice: 899,
+    price: 800000,
+    originalPrice: 950000,
     images: [
       'https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1567581935884-3349723552ca?w=800&h=600&fit=crop&auto=format',
@@ -593,7 +593,7 @@ export const products: Product[] = [
     brand: 'Sony',
     category: 'gaming',
     subcategory: 'controllers',
-    price: 69,
+    price: 70000,
     images: [
       'https://images.unsplash.com/photo-1592840496694-26d035b52b48?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1617096200347-cb04ae810b1d?w=800&h=600&fit=crop&auto=format',
@@ -630,7 +630,7 @@ export const products: Product[] = [
     brand: 'Samsung',
     category: 'phones',
     subcategory: 'samsung-galaxy',
-    price: 799,
+    price: 800000,
     images: [
       'https://images.unsplash.com/photo-1610945264803-b22f6e0b2de6?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=800&h=600&fit=crop&auto=format',
@@ -671,7 +671,7 @@ export const products: Product[] = [
     brand: 'Apple',
     category: 'accessories',
     subcategory: 'phone-cases',
-    price: 59,
+    price: 60000,
     images: [
       'https://images.unsplash.com/photo-1601972599720-36938d4ecd31?w=800&h=600&fit=crop&auto=format',
     ],
@@ -707,7 +707,7 @@ export const products: Product[] = [
     brand: 'Sony',
     category: 'gaming',
     subcategory: 'gaming-headsets',
-    price: 149,
+    price: 150000,
     images: [
       'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&h=600&fit=crop&auto=format',
@@ -742,7 +742,7 @@ export const products: Product[] = [
     brand: 'Google',
     category: 'phones',
     subcategory: 'android',
-    price: 999,
+    price: 1000000,
     images: [
       'https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1567581935884-3349723552ca?w=800&h=600&fit=crop&auto=format',
@@ -784,8 +784,8 @@ export const products: Product[] = [
     brand: 'Samsung',
     category: 'phones',
     subcategory: 'samsung-galaxy',
-    price: 449,
-    originalPrice: 499,
+    price: 450000,
+    originalPrice: 550000,
     images: [
       'https://images.unsplash.com/photo-1610945264803-b22f6e0b2de6?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1581993192873-ab7e60c5b4cf?w=800&h=600&fit=crop&auto=format',
@@ -826,7 +826,7 @@ export const products: Product[] = [
     brand: 'OnePlus',
     category: 'phones',
     subcategory: 'android',
-    price: 899,
+    price: 900000,
     images: [
       'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=800&h=600&fit=crop&auto=format',
@@ -867,7 +867,7 @@ export const products: Product[] = [
     brand: 'Microsoft',
     category: 'gaming',
     subcategory: 'consoles',
-    price: 499,
+    price: 500000,
     images: [
       'https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=600&fit=crop&auto=format',
@@ -903,7 +903,7 @@ export const products: Product[] = [
     brand: 'Nintendo',
     category: 'gaming',
     subcategory: 'consoles',
-    price: 449,
+    price: 450000,
     images: [
       'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1586182987320-4f376d338043?w=800&h=600&fit=crop&auto=format',
@@ -935,7 +935,7 @@ export const products: Product[] = [
     brand: 'Razer',
     category: 'gaming',
     subcategory: 'controllers',
-    price: 149,
+    price: 150000,
     images: [
       'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=800&h=600&fit=crop&auto=format',
@@ -970,8 +970,8 @@ export const products: Product[] = [
     brand: 'Bose',
     category: 'audio',
     subcategory: 'headphones',
-    price: 279,
-    originalPrice: 329,
+    price: 280000,
+    originalPrice: 330000,
     images: [
       'https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=600&fit=crop&auto=format',
@@ -1008,7 +1008,7 @@ export const products: Product[] = [
     brand: 'Beats',
     category: 'audio',
     subcategory: 'headphones',
-    price: 349,
+    price: 350000,
     images: [
       'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&h=600&fit=crop&auto=format',
@@ -1046,8 +1046,8 @@ export const products: Product[] = [
     brand: 'Sony',
     category: 'audio',
     subcategory: 'earbuds',
-    price: 279,
-    originalPrice: 299,
+    price: 280000,
+    originalPrice: 320000,
     images: [
       'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&h=600&fit=crop&auto=format',
@@ -1086,7 +1086,7 @@ export const products: Product[] = [
     brand: 'Samsung',
     category: 'wearables',
     subcategory: 'fitness-trackers',
-    price: 299,
+    price: 300000,
     images: [
       'https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=800&h=600&fit=crop&auto=format',
@@ -1126,7 +1126,7 @@ export const products: Product[] = [
     brand: 'Garmin',
     category: 'wearables',
     subcategory: 'fitness-trackers',
-    price: 449,
+    price: 450000,
     images: [
       'https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&h=600&fit=crop&auto=format',
@@ -1163,8 +1163,8 @@ export const products: Product[] = [
     brand: 'Fitbit',
     category: 'wearables',
     subcategory: 'fitness-trackers',
-    price: 159,
-    originalPrice: 179,
+    price: 160000,
+    originalPrice: 200000,
     images: [
       'https://images.unsplash.com/photo-1614946219870-0dfe8bfc88f5?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=600&fit=crop&auto=format',
@@ -1202,7 +1202,7 @@ export const products: Product[] = [
     brand: 'Apple',
     category: 'wearables',
     subcategory: 'apple-watch',
-    price: 399,
+    price: 400000,
     images: [
       'https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&h=600&fit=crop&auto=format',
@@ -1245,7 +1245,7 @@ export const products: Product[] = [
     brand: 'Anker',
     category: 'accessories',
     subcategory: 'chargers',
-    price: 35,
+    price: 35000,
     images: [
       'https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1572177812156-02f75c6f0d0e?w=800&h=600&fit=crop&auto=format',
@@ -1280,7 +1280,7 @@ export const products: Product[] = [
     brand: 'Belkin',
     category: 'accessories',
     subcategory: 'stands-mounts',
-    price: 149,
+    price: 150000,
     images: [
       'https://images.unsplash.com/photo-1625842268584-8f3296236761?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1607706189992-eae578626c86?w=800&h=600&fit=crop&auto=format',
@@ -1312,7 +1312,7 @@ export const products: Product[] = [
     brand: 'Apple',
     category: 'accessories',
     subcategory: 'tracking',
-    price: 99,
+    price: 100000,
     images: [
       'https://images.unsplash.com/photo-1601972599720-36938d4ecd31?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800&h=600&fit=crop&auto=format',
@@ -1345,7 +1345,7 @@ export const products: Product[] = [
     brand: 'Anker',
     category: 'accessories',
     subcategory: 'cables',
-    price: 19,
+    price: 20000,
     images: [
       'https://images.unsplash.com/photo-1572177812156-02f75c6f0d0e?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1625842268584-8f3296236761?w=800&h=600&fit=crop&auto=format',
@@ -1377,7 +1377,7 @@ export const products: Product[] = [
     brand: 'ESR',
     category: 'accessories',
     subcategory: 'screen-protectors',
-    price: 25,
+    price: 25000,
     images: [
       'https://images.unsplash.com/photo-1607706189992-eae578626c86?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&h=600&fit=crop&auto=format',

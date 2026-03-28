@@ -185,8 +185,8 @@ export default function CheckoutPage() {
   const paymentSucceeded = useRef(false);
 
   const subtotal = items.reduce((acc, i) => acc + i.product.price * i.quantity, 0);
-  const shipping = subtotal > 50 ? 0 : 9.99;
-  const tax      = subtotal * 0.08;
+  const shipping = subtotal > 50000 ? 0 : 3000;
+  const tax      = 0;
   const total    = subtotal + shipping + tax;
 
   // Redirect to cart if empty (but not after a successful payment)
