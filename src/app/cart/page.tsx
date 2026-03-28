@@ -131,9 +131,8 @@ export default function CartPage() {
                   {shipping === 0 ? 'Free' : formatCurrency(shipping)}
                 </span>
               </div>
-              <div className="flex justify-between text-sm text-zinc-600">
-                <span>Tax (est.)</span>
-                <span>{formatCurrency(tax)}</span>
+              <div className="flex justify-between text-sm text-zinc-400">
+                <span>Shipping: free on orders over ₦50,000</span>
               </div>
               <div className="border-t border-slate-100 pt-3 flex justify-between font-bold text-zinc-900">
                 <span>Total</span>
