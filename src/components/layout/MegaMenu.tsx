@@ -23,7 +23,7 @@ const categories: CategoryData[] = [
     featured: {
       name: 'iPhone 16 Pro Max',
       slug: 'iphone-16-pro-max',
-      image: 'https://picsum.photos/seed/iphone-16-pro-max/400/300',
+      image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=300&fit=crop&auto=format',
     },
   },
   {
@@ -38,7 +38,7 @@ const categories: CategoryData[] = [
     featured: {
       name: 'PS5 Pro Console',
       slug: 'ps5-pro',
-      image: 'https://picsum.photos/seed/ps5-pro/400/300',
+      image: 'https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=400&h=300&fit=crop&auto=format',
     },
   },
   {
@@ -53,7 +53,7 @@ const categories: CategoryData[] = [
     featured: {
       name: 'AirPods Pro 3',
       slug: 'airpods-pro-3',
-      image: 'https://picsum.photos/seed/airpods-pro-3/400/300',
+      image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&h=300&fit=crop&auto=format',
     },
   },
   {
@@ -67,7 +67,7 @@ const categories: CategoryData[] = [
     featured: {
       name: 'Apple Watch Ultra 2',
       slug: 'apple-watch-ultra-2',
-      image: 'https://picsum.photos/seed/apple-watch-ultra-2/400/300',
+      image: 'https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=400&h=300&fit=crop&auto=format',
     },
   },
   {

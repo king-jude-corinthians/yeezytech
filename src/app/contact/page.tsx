@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MapPin, Phone, EnvelopeSimple, CheckCircle } from '@phosphor-icons/react/dist/ssr';
+import { MapPin, Phone, EnvelopeSimple, CheckCircle, InstagramLogo, WhatsappLogo, TiktokLogo } from '@phosphor-icons/react/dist/ssr';
 
 const subjects = ['General Inquiry', 'Order Support', 'Product Question', 'Returns & Exchanges', 'Other'];
 
@@ -62,30 +62,64 @@ export default function ContactPage() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.1, type: 'spring', stiffness: 80, damping: 20 }}
         >
-          <div className="space-y-5 mb-10">
+          {/* Office Locations */}
+          <div className="space-y-4 mb-8">
+            <div className="bg-[#000435]/5 rounded-2xl p-4">
+              <div className="flex items-center gap-2 mb-1">
+                <MapPin size={15} weight="fill" className="text-[#000435]" />
+                <p className="text-xs font-bold uppercase tracking-wider text-[#000435]">Port Harcourt Office</p>
+              </div>
+              <p className="text-sm text-zinc-700 pl-5">No. 27, Ogunabali Road, Opp. Civic Center, Port Harcourt</p>
+            </div>
+            <div className="bg-[#000435]/5 rounded-2xl p-4">
+              <div className="flex items-center gap-2 mb-1">
+                <MapPin size={15} weight="fill" className="text-[#000435]" />
+                <p className="text-xs font-bold uppercase tracking-wider text-[#000435]">Owerri Office</p>
+              </div>
+              <p className="text-sm text-zinc-700 pl-5">No. 22, Okigwe Park, By Tetlow Junction, Owerri</p>
+            </div>
+          </div>
+
+          {/* Contact details */}
+          <div className="space-y-4 mb-8">
             {[
-              { icon: <MapPin size={18} />, label: 'Address', value: '123 Tech Boulevard\nSan Francisco, CA 94105' },
-              { icon: <Phone size={18} />, label: 'Phone', value: '+1 (415) 829-7340' },
-              { icon: <EnvelopeSimple size={18} />, label: 'Email', value: 'support@yeezytech.com' },
+              { icon: <Phone size={18} />, label: 'Call', value: '09168542705', href: 'tel:09168542705' },
+              { icon: <WhatsappLogo size={18} />, label: 'WhatsApp', value: '08039345757', href: 'https://wa.me/2348039345757' },
+              { icon: <EnvelopeSimple size={18} />, label: 'Email', value: 'yeezytechgadgets@gmail.com', href: 'mailto:yeezytechgadgets@gmail.com' },
+              { icon: <InstagramLogo size={18} />, label: 'Instagram', value: '@yeezygadgets', href: 'https://instagram.com/yeezygadgets' },
+              { icon: <TiktokLogo size={18} />, label: 'TikTok', value: '@yeezytechgadgets_', href: 'https://tiktok.com/@yeezytechgadgets_' },
             ].map((item) => (
-              <div key={item.label} className="flex items-start gap-3">
-                <div className="w-9 h-9 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0">
+              <a key={item.label} href={item.href} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 group">
+                <div className="w-9 h-9 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-emerald-100 transition-colors">
                   {item.icon}
                 </div>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-0.5">{item.label}</p>
-                  <p className="text-sm text-zinc-700 whitespace-pre-line">{item.value}</p>
+                  <p className="text-sm text-zinc-700 group-hover:text-[#000435] transition-colors">{item.value}</p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
 
-          <div className="border-t border-slate-100 pt-6">
-            <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-3">Business Hours</p>
-            <div className="text-sm text-zinc-600 space-y-1">
-              <p>Mon &ndash; Fri: 9am &ndash; 6pm PST</p>
-              <p>Sat &ndash; Sun: 10am &ndash; 4pm PST</p>
-            </div>
+          <div className="flex gap-3">
+            <a
+              href="https://wa.me/2348039345757"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl px-4 py-3 text-sm font-semibold transition-colors"
+            >
+              <WhatsappLogo size={18} weight="fill" />
+              WhatsApp
+            </a>
+            <a
+              href="https://instagram.com/yeezygadgets"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 inline-flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-xl px-4 py-3 text-sm font-semibold transition-all"
+            >
+              <InstagramLogo size={18} weight="fill" />
+              Instagram
+            </a>
           </div>
         </motion.div>
 

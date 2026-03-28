@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const categories = [
-  { name: 'Phones', slug: 'phones', image: 'https://picsum.photos/seed/cat-phones/400/400' },
-  { name: 'Gaming', slug: 'gaming', image: 'https://picsum.photos/seed/cat-gaming/400/400' },
-  { name: 'Audio', slug: 'audio', image: 'https://picsum.photos/seed/cat-audio/400/400' },
-  { name: 'Wearables', slug: 'wearables', image: 'https://picsum.photos/seed/cat-wearables/400/400' },
-  { name: 'Accessories', slug: 'accessories', image: 'https://picsum.photos/seed/cat-accessories/400/400' },
+  { name: 'Phones', slug: 'phones', image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop&auto=format' },
+  { name: 'Gaming', slug: 'gaming', image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=400&fit=crop&auto=format' },
+  { name: 'Audio', slug: 'audio', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop&auto=format' },
+  { name: 'Wearables', slug: 'wearables', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop&auto=format' },
+  { name: 'Accessories', slug: 'accessories', image: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400&h=400&fit=crop&auto=format' },
 ];
 
 export default function CategoryRow() {

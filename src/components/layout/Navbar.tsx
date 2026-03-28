@@ -94,7 +94,7 @@ export default function Navbar() {
               {user ? (
                 <Link
                   href="/dashboard"
-                  className="hidden md:flex items-center gap-2 text-sm font-medium text-zinc-600 hover:text-zinc-900 transition-colors"
+                  className="flex items-center gap-2 text-sm font-medium text-zinc-600 hover:text-zinc-900 transition-colors"
                   aria-label="My account"
                 >
                   <div className="w-7 h-7 rounded-full bg-[#000435] text-white text-[11px] font-bold flex items-center justify-center select-none">
@@ -109,10 +109,10 @@ export default function Navbar() {
               ) : (
                 <Link
                   href="/login"
-                  className="hidden md:flex items-center gap-1.5 text-sm font-medium border border-[#000435]/25 text-[#000435] rounded-xl px-4 py-1.5 hover:bg-[#000435] hover:text-white transition-all"
+                  className="flex items-center gap-1.5 text-sm font-medium border border-[#000435]/25 text-[#000435] rounded-xl px-3 py-1.5 hover:bg-[#000435] hover:text-white transition-all"
                 >
                   <UserCircle size={16} />
-                  Sign In
+                  <span className="hidden sm:inline">Sign In</span>
                 </Link>
               )}
 
@@ -175,7 +175,7 @@ export default function Navbar() {
       </header>
 
       {/* Mobile Drawer */}
-      <MobileDrawer isOpen={mobileOpen} onClose={() => setMobileOpen(false)} />
+      <MobileDrawer isOpen={mobileOpen} onClose={() => setMobileOpen(false)} user={user} />
     </>
   );
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { loadStripe } from '@stripe/stripe-js';
 import {
@@ -182,23 +182,25 @@ function CheckoutForm({
 export default function CheckoutPage() {
   const router = useRouter();
   const { items, clearCart } = useCartStore();
+  const paymentSucceeded = useRef(false);
 
   const subtotal = items.reduce((acc, i) => acc + i.product.price * i.quantity, 0);
   const shipping = subtotal > 50 ? 0 : 9.99;
   const tax      = subtotal * 0.08;
   const total    = subtotal + shipping + tax;
 
-  // Redirect to cart if empty
+  // Redirect to cart if empty (but not after a successful payment)
   useEffect(() => {
-    if (items.length === 0) router.push('/cart');
+    if (items.length === 0 && !paymentSucceeded.current) router.push('/cart');
   }, [items.length, router]);
 
   function handleSuccess(paymentIntentId: string) {
-    clearCart();
+    paymentSucceeded.current = true;
     router.push(`/checkout/success?payment_intent=${paymentIntentId}`);
+    clearCart();
   }
 
-  if (items.length === 0) return null;
+  if (items.length === 0 && !paymentSucceeded.current) return null;
 
   const appearance = {
     theme: 'stripe' as const,

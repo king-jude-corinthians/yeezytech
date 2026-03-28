@@ -11,27 +11,27 @@ const categoryMeta: Record<string, { title: string; description: string; image: 
   phones: {
     title: 'Phones',
     description: 'The latest smartphones from Apple, Samsung, and more.',
-    image: 'https://picsum.photos/seed/cat-phones-hero/1400/400',
+    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1400&h=400&fit=crop&auto=format',
   },
   gaming: {
     title: 'Gaming',
     description: 'Consoles, controllers, and everything you need to game.',
-    image: 'https://picsum.photos/seed/cat-gaming-hero/1400/400',
+    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1400&h=400&fit=crop&auto=format',
   },
   audio: {
     title: 'Audio',
     description: 'Premium sound for every moment.',
-    image: 'https://picsum.photos/seed/cat-audio-hero/1400/400',
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1400&h=400&fit=crop&auto=format',
   },
   wearables: {
     title: 'Wearables',
     description: 'Smart watches and fitness trackers for your lifestyle.',
-    image: 'https://picsum.photos/seed/cat-wearables-hero/1400/400',
+    image: 'https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=1400&h=400&fit=crop&auto=format',
   },
   accessories: {
     title: 'Accessories',
     description: 'Essential tech accessories and peripherals.',
-    image: 'https://picsum.photos/seed/cat-accessories-hero/1400/400',
+    image: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?w=1400&h=400&fit=crop&auto=format',
   },
 };
 
@@ -101,7 +101,7 @@ export default function CategoryPage({ params }: { params: Promise<{ slug: strin
           ))}
         </div>
 
-        <div className="flex gap-8">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-8">
           <FilterSidebar filters={filters} onChange={setFilters} />
           <div className="flex-1 min-w-0">
             <div className="flex items-center justify-between mb-6">

@@ -55,7 +55,7 @@ function ShopContent() {
         <p className="text-zinc-400 text-sm">{filtered.length} products</p>
       </div>
 
-      <div className="flex gap-8">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-8">
         {/* Filters */}
         <FilterSidebar filters={filters} onChange={setFilters} />
 
