@@ -291,9 +291,8 @@ export default function CheckoutPage() {
                     {shipping === 0 ? 'Free' : formatCurrency(shipping)}
                   </span>
                 </div>
-                <div className="flex justify-between text-sm text-zinc-500">
-                  <span>Tax (8%)</span>
-                  <span>{formatCurrency(tax)}</span>
+                <div className="flex justify-between text-sm text-zinc-400">
+                  <span>Free delivery on orders over ₦50,000</span>
                 </div>
                 <div className="flex justify-between font-bold text-zinc-900 text-base pt-2 border-t border-slate-100">
                   <span>Total</span>
