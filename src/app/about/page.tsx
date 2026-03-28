@@ -12,7 +12,7 @@ const features = [
   {
     icon: <Truck size={40} />,
     title: 'Fast Delivery',
-    desc: 'Free delivery on orders over $50. Most orders delivered within 1-3 business days.',
+    desc: 'Free delivery on orders over ₦50,000. Most orders delivered within 1-3 business days across Nigeria.',
   },
   {
     icon: <Headset size={40} />,
