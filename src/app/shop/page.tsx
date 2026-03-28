@@ -86,7 +86,7 @@ function ShopContent() {
             <div className="py-24 text-center">
               <p className="text-zinc-400 mb-4">No products match your filters.</p>
               <button
-                onClick={() => setFilters({ categories: [], brands: [], minPrice: 0, maxPrice: 5000, minRating: 0, inStock: false })}
+                onClick={() => setFilters({ categories: [], brands: [], minPrice: 0, maxPrice: 2500000, minRating: 0, inStock: false })}
                 className="text-sm font-medium text-zinc-900 underline"
               >
                 Clear Filters
