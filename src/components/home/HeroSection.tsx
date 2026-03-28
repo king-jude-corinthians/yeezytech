@@ -1,58 +1,10 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight, ShieldCheck, Truck, ArrowsClockwise, Headset } from '@phosphor-icons/react/dist/ssr';
 
 export default function HeroSection() {
-  const videoRef  = useRef<HTMLVideoElement>(null);
-  const wrapperRef = useRef<HTMLDivElement>(null);
-  const targetTimeRef = useRef(0);
-  const rafRef    = useRef<number | null>(null);
-  const isSeeking = useRef(false);
-
-  /* ── smooth RAF scrub loop ─────────────────────────────── */
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-    const tick = () => {
-      if (!isSeeking.current && video.duration) {
-        const diff = targetTimeRef.current - video.currentTime;
-        if (Math.abs(diff) > 0.001) video.currentTime += diff * 0.7;
-      }
-      rafRef.current = requestAnimationFrame(tick);
-    };
-    const onSeeking = () => { isSeeking.current = true; };
-    const onSeeked  = () => { isSeeking.current = false; };
-    video.addEventListener('seeking', onSeeking);
-    video.addEventListener('seeked',  onSeeked);
-    rafRef.current = requestAnimationFrame(tick);
-    return () => {
-      video.removeEventListener('seeking', onSeeking);
-      video.removeEventListener('seeked',  onSeeked);
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    };
-  }, []);
-
-  /* ── scroll → video time ───────────────────────────────── */
-  useEffect(() => {
-    const handle = () => {
-      const wrapper = wrapperRef.current;
-      const video   = videoRef.current;
-      if (!wrapper || !video || !video.duration) return;
-      const { top, height } = wrapper.getBoundingClientRect();
-      const scrollable = height - window.innerHeight;
-      if (scrollable <= 0) return;
-      targetTimeRef.current = Math.min(Math.max(-top / scrollable, 0), 1) * video.duration;
-    };
-    window.addEventListener('scroll',    handle, { passive: true });
-    window.addEventListener('touchmove', handle, { passive: true });
-    return () => {
-      window.removeEventListener('scroll',    handle);
-      window.removeEventListener('touchmove', handle);
-    };
-  }, []);
 
   const perks = [
     { icon: <Truck size={16} />,           label: 'Free Delivery',  sub: 'Orders over $50' },
@@ -64,8 +16,7 @@ export default function HeroSection() {
   const brands = ['Apple', 'Samsung', 'Sony', 'PlayStation', 'Beats', 'Bose', 'JBL', 'Anker'];
 
   return (
-    <div ref={wrapperRef} className="relative h-[250vh] md:h-[300vh]">
-      <div className="sticky top-0 h-screen bg-[#f9fafb] overflow-hidden">
+    <div className="relative h-screen bg-[#f9fafb] overflow-hidden">
 
         {/*
           ── DESKTOP LAYOUT (md+) ──────────────────────────────────
@@ -202,9 +153,9 @@ export default function HeroSection() {
               'md:h-[calc(100vh-80px)]',
             ].join(' ')}>
               <video
-                ref={videoRef}
                 src="/hero-video.mp4"
-                preload="auto"
+                autoPlay
+                loop
                 muted
                 playsInline
                 className="w-full h-full object-cover"
@@ -241,6 +192,5 @@ export default function HeroSection() {
         </motion.div>
 
       </div>
-    </div>
   );
 }
