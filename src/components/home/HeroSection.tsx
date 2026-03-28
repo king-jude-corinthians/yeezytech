@@ -178,13 +178,14 @@ export default function HeroSection() {
               transition={{ type: 'spring', stiffness: 80, damping: 20, delay: 0.2 }}
               className="order-1 md:order-2 md:pl-10 flex justify-center md:justify-end shrink-0"
             >
-              <div className="relative rounded-[2rem] overflow-hidden shadow-2xl bg-slate-100">
+              <div className="relative rounded-[2rem] overflow-hidden shadow-2xl bg-slate-100 aspect-[9/16] h-[70vh]">
                 <video
                   ref={videoRef}
                   src="/hero-video.mp4"
                   preload="auto"
                   muted
                   playsInline
+                  className="w-full h-full object-cover"
                 />
                 {/* Floating badge */}
                 <div className="absolute bottom-5 left-5 bg-white/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-lg">
