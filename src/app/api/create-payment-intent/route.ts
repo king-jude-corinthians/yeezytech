@@ -10,9 +10,9 @@ export async function POST(request: Request) {
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
       apiVersion: '2026-03-25.dahlia',
     });
-    const { amount, currency = 'usd', items } = await request.json();
+    const { amount, currency = 'ngn', items } = await request.json();
 
-    if (!amount || amount < 50) {
+    if (!amount || amount < 5000) {
       return NextResponse.json(
         { error: 'Invalid amount' },
         { status: 400 }
