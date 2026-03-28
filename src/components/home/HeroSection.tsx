@@ -18,7 +18,7 @@ export default function HeroSection() {
     const tick = () => {
       if (!isSeeking.current && video.duration) {
         const diff = targetTimeRef.current - video.currentTime;
-        if (Math.abs(diff) > 0.005) video.currentTime += diff * 0.35;
+        if (Math.abs(diff) > 0.001) video.currentTime += diff * 0.7;
       }
       rafRef.current = requestAnimationFrame(tick);
     };
