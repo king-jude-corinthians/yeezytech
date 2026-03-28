@@ -145,7 +145,7 @@ export default function HeroSection() {
               <p className="text-[10px] text-zinc-400 mb-0.5">Latest Drop</p>
               <div className="flex items-center justify-between">
                 <p className="text-xs font-semibold text-zinc-900">iPhone 16 Pro Max</p>
-                <p className="text-[#000435] font-bold text-xs">From $1,199</p>
+                <p className="text-[#000435] font-bold text-xs">From ₦1,650,000</p>
               </div>
             </div>
           </div>
