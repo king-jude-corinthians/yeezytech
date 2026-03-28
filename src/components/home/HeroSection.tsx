@@ -37,7 +37,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: -24 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ type: 'spring', stiffness: 80, damping: 20, delay: 0.1 }}
-            className="flex flex-col justify-center flex-1 pt-24 pb-4 md:py-0 md:pr-10"
+            className="flex flex-col justify-center flex-1 pt-24 pb-4 md:py-0 md:pr-8"
           >
             <motion.span
               initial={{ opacity: 0, y: 8 }}
@@ -141,16 +141,16 @@ export default function HeroSection() {
               'flex items-center justify-center',
               /* mobile: horizontal strip between headline and perks */
               'py-4 md:py-0',
-              /* desktop: full height right column, fixed width */
-              'md:h-full md:w-[38%] lg:w-[34%] md:items-center md:justify-end',
+              /* desktop: full height right column, stretches to fill */
+              'md:h-full md:w-[42%] lg:w-[40%] md:items-stretch md:justify-center md:pl-6',
             ].join(' ')}
           >
             <div className={[
               'relative overflow-hidden rounded-[1.75rem] shadow-2xl bg-slate-200',
               /* mobile: portrait pill, 46 vh tall */
               'h-[46vh] aspect-[9/16]',
-              /* desktop: fills column height with padding */
-              'md:h-[calc(100vh-80px)]',
+              /* desktop: fills full column width and height */
+              'md:aspect-auto md:w-full md:h-[calc(100vh-80px)]',
             ].join(' ')}>
               <video
                 src="/hero-video.mp4"
