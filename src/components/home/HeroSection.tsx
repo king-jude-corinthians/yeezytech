@@ -16,7 +16,7 @@ export default function HeroSection() {
   const brands = ['Apple', 'Samsung', 'Sony', 'PlayStation', 'Beats', 'Bose', 'JBL', 'Anker'];
 
   return (
-    <div className="relative h-screen bg-[#f9fafb] overflow-hidden">
+    <div className="relative bg-[#f9fafb] md:h-screen md:overflow-hidden">
 
         {/*
           ── DESKTOP LAYOUT (md+) ──────────────────────────────────
@@ -30,14 +30,14 @@ export default function HeroSection() {
             3. Stats + perks
         */}
 
-        <div className="h-full flex flex-col md:flex-row md:items-stretch max-w-[1400px] mx-auto px-4 md:px-8">
+        <div className="md:h-full flex flex-col md:flex-row md:items-stretch max-w-[1400px] mx-auto px-4 md:px-8">
 
           {/* ── LEFT COLUMN / TOP ON MOBILE ─────────────────────── */}
           <motion.div
             initial={{ opacity: 0, x: -24 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ type: 'spring', stiffness: 80, damping: 20, delay: 0.1 }}
-            className="flex flex-col justify-center flex-1 pt-24 pb-4 md:py-0 md:pr-8"
+            className="flex flex-col justify-center md:flex-1 pt-24 pb-4 md:py-0 md:pr-8"
           >
             <motion.span
               initial={{ opacity: 0, y: 8 }}
@@ -142,7 +142,7 @@ export default function HeroSection() {
               /* mobile: horizontal strip between headline and perks */
               'py-4 md:py-0',
               /* desktop: full height right column, stretches to fill */
-              'md:h-full md:w-[42%] lg:w-[40%] md:items-stretch md:justify-center md:pl-6',
+              'md:h-full md:w-auto md:items-center md:justify-end md:pl-6',
             ].join(' ')}
           >
             <div className={[
@@ -150,7 +150,7 @@ export default function HeroSection() {
               /* mobile: portrait pill, 46 vh tall */
               'h-[46vh] aspect-[9/16]',
               /* desktop: fills full column width and height */
-              'md:aspect-auto md:w-full md:h-[calc(100vh-80px)]',
+              'md:h-[calc(100vh-80px)] md:w-auto',
             ].join(' ')}>
               <video
                 src="/hero-video.mp4"
