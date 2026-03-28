@@ -18,7 +18,7 @@ export default function HeroSection() {
     const tick = () => {
       if (!isSeeking.current && video.duration) {
         const diff = targetTimeRef.current - video.currentTime;
-        if (Math.abs(diff) > 0.01) video.currentTime += diff * 0.1;
+        if (Math.abs(diff) > 0.005) video.currentTime += diff * 0.35;
       }
       rafRef.current = requestAnimationFrame(tick);
     };
@@ -65,7 +65,7 @@ export default function HeroSection() {
   return (
     <div ref={wrapperRef} className="relative h-[220vh] md:h-[280vh]">
       <div className="sticky top-0 h-screen flex flex-col justify-center bg-[#f9fafb] overflow-hidden">
-        <div className="max-w-[1400px] mx-auto px-4 md:px-8 w-full py-6 md:py-10 overflow-y-auto max-h-screen">
+        <div className="max-w-[1400px] mx-auto px-4 md:px-8 w-full py-6 md:py-10">
 
           {/* Main hero row */}
           <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-0">
@@ -178,7 +178,7 @@ export default function HeroSection() {
               transition={{ type: 'spring', stiffness: 80, damping: 20, delay: 0.2 }}
               className="order-1 md:order-2 md:pl-10 flex justify-center md:justify-end shrink-0"
             >
-              <div className="relative rounded-[2rem] overflow-hidden shadow-2xl bg-slate-100 aspect-[9/16] h-[60vh]">
+              <div className="relative rounded-[2rem] overflow-hidden shadow-2xl bg-slate-100 aspect-[9/16] h-[85vh]">
                 <video
                   ref={videoRef}
                   src="/hero-video.mp4"
