@@ -64,11 +64,11 @@ export default function FeaturedSpotlight() {
           </div>
 
           {/* Image */}
-          <div className="relative min-h-[320px] md:min-h-0 bg-gradient-to-br from-slate-200 to-slate-300 overflow-hidden">
+          <div className="relative min-h-[320px] md:min-h-0 bg-white overflow-hidden flex items-center justify-center p-8">
             <img
-              src={product.images[0]}
-              alt={product.name}
-              className="w-full h-full object-cover"
+              src="/featured-iphone.png"
+              alt="iPhone 17 Pro Max"
+              className="w-full h-full object-contain"
             />
           </div>
         </motion.div>
