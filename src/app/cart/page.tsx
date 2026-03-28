@@ -14,9 +14,9 @@ export default function CartPage() {
   const [promoApplied, setPromoApplied] = useState(false);
 
   const subtotal = items.reduce((acc, i) => acc + i.product.price * i.quantity, 0);
-  const shipping = subtotal > 50 ? 0 : 9.99;
+  const shipping = subtotal > 50000 ? 0 : 3000;
   const discount = promoApplied ? subtotal * 0.1 : 0;
-  const tax = (subtotal - discount) * 0.08;
+  const tax = 0;
   const total = subtotal - discount + shipping + tax;
 
   if (items.length === 0) {

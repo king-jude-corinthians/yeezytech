@@ -11,7 +11,7 @@ export default function AnnouncementBar() {
   return (
     <div className="bg-[#000435] text-white text-center text-sm py-2 px-4 relative">
       <p className="font-medium">
-        Free shipping on all orders over $50 &mdash; Limited time offer
+        Free delivery on all orders over $50 &mdash; Limited time offer
       </p>
       <button
         onClick={() => setVisible(false)}

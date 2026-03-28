@@ -192,7 +192,7 @@ export default function ProductPage({ params }: { params: Promise<{ slug: string
           {/* Shipping info */}
           <div className="mt-6 space-y-2">
             {[
-              { icon: <Truck size={14} />, text: 'Free shipping on orders over $50' },
+              { icon: <Truck size={14} />, text: 'Free delivery on orders over $50' },
               { icon: <ArrowsClockwise size={14} />, text: '30-day hassle-free returns' },
               { icon: <ShieldCheck size={14} />, text: '100% authentic, authorized retailer' },
             ].map((item, i) => (
