@@ -986,7 +986,7 @@ export const products: Product[] = [
       Microphones: '2 mics for calls',
       Weight: '240g',
       Foldable: 'Yes',
-      Ear Cushions: 'Protein leather over-ear',
+      'Ear Cushions': 'Protein leather over-ear',
     },
     colors: [
       { name: 'White Smoke', hex: '#f0efed' },
