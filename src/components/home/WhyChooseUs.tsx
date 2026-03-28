@@ -23,7 +23,7 @@ const reasons = [
     icon: <Truck size={28} weight="duotone" />,
     title: 'Fast & Reliable Shipping',
     description:
-      'Orders over $50 ship free. Most orders arrive within 2 business days across all major cities.',
+      'Orders over ₦50,000 ship free. Most orders arrive within 1-3 business days across Nigeria.',
   },
   {
     icon: <CreditCard size={28} weight="duotone" />,
