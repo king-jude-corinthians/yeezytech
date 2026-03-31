@@ -71,7 +71,7 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold tracking-tight text-zinc-900 mb-6">How We Started</h2>
               <div className="space-y-4 text-zinc-500 leading-relaxed">
                 <p>
-                  YeezyTech was founded with a simple mission: make premium technology accessible to everyone.
+                  Gadgety was founded with a simple mission: make premium technology accessible to everyone.
                   What started as a small online store has grown into a trusted destination for thousands
                   of customers across the country.
                 </p>
@@ -95,7 +95,7 @@ export default function AboutPage() {
             >
               <img
                 src="https://picsum.photos/seed/yeezytech-story/800/600"
-                alt="YeezyTech team"
+                alt="Gadgety team"
                 className="w-full h-full object-cover"
               />
             </motion.div>
