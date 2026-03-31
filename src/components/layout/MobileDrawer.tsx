@@ -34,7 +34,7 @@ export default function MobileDrawer({
             className="fixed top-0 left-0 bottom-0 w-[320px] bg-[#000435] z-50 flex flex-col"
           >
             <div className="flex items-center justify-between p-6 border-b border-white/10">
-              <img src="/logo.png" alt="YeezyTech Gadgets" className="h-12 w-auto object-contain brightness-0 invert" />
+              <img src="/gadgety.png" alt="Gadgety" className="h-12 w-auto object-contain brightness-0 invert" />
               <button
                 onClick={onClose}
                 className="text-white/60 hover:text-white transition-colors"
