@@ -68,8 +68,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-zinc-500">
-            &copy; {new Date().getFullYear()} YeezyTech Gadgets. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Gadgety. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <span className="text-xs text-zinc-500">Visa</span>
