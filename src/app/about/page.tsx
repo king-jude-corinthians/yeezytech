@@ -48,7 +48,7 @@ export default function AboutPage() {
               Our Story
             </span>
             <h1 className="text-5xl md:text-6xl font-bold tracking-tighter text-zinc-900 mb-6 max-w-2xl">
-              About YeezyTech
+              About Gadgety
             </h1>
             <p className="text-lg text-zinc-500 leading-relaxed max-w-[55ch]">
               We bring the world&apos;s best technology to your doorstep. Authentic products,
