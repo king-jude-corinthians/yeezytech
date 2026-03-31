@@ -61,7 +61,7 @@ export default function Navbar() {
 
             {/* Logo */}
             <Link href="/" className="shrink-0">
-              <img src="/logo.png" alt="YeezyTech Gadgets" className="h-16 w-auto object-contain" />
+              <img src="/gadgety.png" alt="Gadgety" className="h-16 w-auto object-contain" />
             </Link>
 
             {/* Desktop nav links */}
