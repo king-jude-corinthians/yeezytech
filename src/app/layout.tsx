@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "YeezyTech Gadgets | Premium Electronics & Accessories",
+  title: "Gadgety | Upgrade Your Everyday",
   description:
-    "Shop the latest iPhones, Samsung phones, PlayStation, AirPods, Apple Watch, and premium tech accessories at YeezyTech Gadgets.",
+    "Shop the latest iPhones, Samsung phones, PlayStation, AirPods, Apple Watch, and premium tech accessories at Gadgety. Upgrade Your Everyday.",
 };
 
 export default function RootLayout({
