@@ -39,7 +39,7 @@ export default function Footer() {
               <img src="/gadgety.png" alt="Gadgety" className="h-12 w-auto object-contain brightness-0 invert" />
             </Link>
             <p className="mt-4 text-sm text-white/50 leading-relaxed max-w-[280px]">
-              Powering Smart Living. Premium electronics and accessories — authentic products, fast delivery, and expert support.
+              Upgrade Your Everyday. Premium electronics and accessories — authentic products, fast delivery, and expert support.
             </p>
           </div>
 
