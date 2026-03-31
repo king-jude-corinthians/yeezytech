@@ -61,7 +61,7 @@ export default function Navbar() {
 
             {/* Logo */}
             <Link href="/" className="shrink-0">
-              <img src="/gadgety.png" alt="Gadgety" className="h-16 w-auto object-contain" />
+              <img src="/gadgety.png" alt="Gadgety" className="h-16 w-auto object-contain" style={{ filter: 'brightness(0) saturate(100%) invert(8%) sepia(80%) saturate(2800%) hue-rotate(228deg) brightness(85%)' }} />
             </Link>
 
             {/* Desktop nav links */}
