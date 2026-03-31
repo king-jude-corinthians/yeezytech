@@ -43,8 +43,8 @@ export default function HeroSection() {
             transition={{ delay: 0.3, type: 'spring', stiffness: 80, damping: 20 }}
             className="text-[2.4rem] sm:text-5xl lg:text-6xl font-bold tracking-tighter leading-[0.92] text-zinc-900 mb-5"
           >
-            The Future<br />of Tech,<br />
-            <span className="text-[#000435]">Delivered.</span>
+            Upgrade<br />Your<br />
+            <span className="text-[#000435]">Everyday.</span>
           </motion.h1>
 
           <motion.p
